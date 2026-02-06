@@ -5,13 +5,14 @@ public abstract class Singleton<T> : MonoBehaviour where T : Component
 {
     private static T _instance;
 
-    private static T Instance
+    public static T Instance
     {
         get
         {
-            if(_instance != null)
+            if(_instance == null)
             {
-                if(_instance = FindFirstObjectByType<T>())
+                _instance = FindFirstObjectByType<T>();
+                if(_instance == null)
                 {
                     GameObject obj = new GameObject();
                     obj.name = typeof(T).Name;
@@ -34,6 +35,11 @@ public abstract class Singleton<T> : MonoBehaviour where T : Component
         {
             Destroy(gameObject);
         }
+    }
+
+    protected virtual void OnDestroy()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoad;
     }
 
     protected abstract void OnSceneLoad(Scene scnene, LoadSceneMode mode);
