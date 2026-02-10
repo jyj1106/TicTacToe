@@ -9,15 +9,15 @@ public abstract class Singleton<T> : MonoBehaviour where T : Component
     {
         get
         {
-            if(_instance == null)
+            if (_instance == null)
             {
                 _instance = FindFirstObjectByType<T>();
-                if(_instance == null)
+                if (_instance == null)
                 {
                     GameObject obj = new GameObject();
                     obj.name = typeof(T).Name;
                     _instance = obj.AddComponent<T>();
-                }                
+                }
             }
             return _instance;
         }
@@ -25,7 +25,7 @@ public abstract class Singleton<T> : MonoBehaviour where T : Component
 
     private void Awake()
     {
-        if(_instance == null)
+        if (_instance == null)
         {
             _instance = this as T;
             DontDestroyOnLoad(gameObject);
@@ -37,10 +37,10 @@ public abstract class Singleton<T> : MonoBehaviour where T : Component
         }
     }
 
+    protected abstract void OnSceneLoad(Scene scene, LoadSceneMode mode);
+
     protected virtual void OnDestroy()
     {
         SceneManager.sceneLoaded -= OnSceneLoad;
     }
-
-    protected abstract void OnSceneLoad(Scene scnene, LoadSceneMode mode);
 }

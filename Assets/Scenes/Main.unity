@@ -370,7 +370,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 371635972}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1290989498}
+        m_TargetAssemblyTypeName: MainPanelController, Assembly-CSharp
+        m_MethodName: OnClickSinglePlayButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &371635972
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -760,7 +772,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 784202738}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1290989498}
+        m_TargetAssemblyTypeName: MainPanelController, Assembly-CSharp
+        m_MethodName: OnClickDualPlayButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &784202738
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1186,6 +1210,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 771b17cda02ef3f4e95977e6503918e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canvas: {fileID: 1290989493}
 --- !u!1 &1672574314
 GameObject:
   m_ObjectHideFlags: 0
@@ -1254,7 +1279,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   settingsPanelPrefab: {fileID: 7616528148042724702, guid: 71d6c4be17f58544a82e10f2e99c0de6, type: 3}
-  canvas: {fileID: 1290989496}
+  canvas: {fileID: 1290989493}
 --- !u!4 &1944799604
 Transform:
   m_ObjectHideFlags: 0
