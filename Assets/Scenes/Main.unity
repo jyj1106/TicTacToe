@@ -506,7 +506,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1290989498}
         m_TargetAssemblyTypeName: MainPanelController, Assembly-CSharp
-        m_MethodName: OnClickSettingButton
+        m_MethodName: OnClickSettingsButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1210,7 +1210,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 771b17cda02ef3f4e95977e6503918e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvas: {fileID: 1290989493}
 --- !u!1 &1672574314
 GameObject:
   m_ObjectHideFlags: 0
@@ -1279,7 +1278,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   settingsPanelPrefab: {fileID: 7616528148042724702, guid: 71d6c4be17f58544a82e10f2e99c0de6, type: 3}
-  canvas: {fileID: 1290989493}
+  confirmPanelPrefab: {fileID: 4846192053553018651, guid: 892967771401b0348a4dfd6e3dcfb374, type: 3}
 --- !u!4 &1944799604
 Transform:
   m_ObjectHideFlags: 0

@@ -1148,6 +1148,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   settingsPanelPrefab: {fileID: 7616528148042724702, guid: 71d6c4be17f58544a82e10f2e99c0de6, type: 3}
+  confirmPanelPrefab: {fileID: 4846192053553018651, guid: 892967771401b0348a4dfd6e3dcfb374, type: 3}
 --- !u!4 &722114873
 Transform:
   m_ObjectHideFlags: 0
@@ -1587,7 +1588,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1740100527}
         m_TargetAssemblyTypeName: GamePanelController, Assembly-CSharp
-        m_MethodName: OnClickSettingButton
+        m_MethodName: OnClickSettingsButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2375,6 +2376,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e1b04517951cfe43ac51f1ffb86034e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerATurnImage: {fileID: 1588501471}
+  playerBTurnImage: {fileID: 1684419793}
 --- !u!1 &2005715670
 GameObject:
   m_ObjectHideFlags: 0
@@ -2516,7 +2519,7 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 519420032}
-  - {fileID: 2005715671}
   - {fileID: 1740100526}
   - {fileID: 1007457297}
+  - {fileID: 2005715671}
   - {fileID: 722114873}

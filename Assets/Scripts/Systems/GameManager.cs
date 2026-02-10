@@ -37,7 +37,7 @@ public class GameManager : Singleton<GameManager>
             _gamePanelController = FindFirstObjectByType<GamePanelController>();
 
             // Game Logic »ý¼º
-            _gameLogic = new GameLogic(GameType.DualPlay, blockController);
+            _gameLogic = new GameLogic(_gameType, blockController);
         }
     }
 

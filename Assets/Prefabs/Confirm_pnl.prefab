@@ -65,7 +65,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\uC885\uB8CC\uD558\uC2DC\uACA0\uC2B5\uB2C8\uAE4C?"
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f9e0512f6d11c534d86b4f814b0d9d4a, type: 2}
   m_sharedMaterial: {fileID: -480836417293741765, guid: f9e0512f6d11c534d86b4f814b0d9d4a, type: 2}
@@ -437,9 +437,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: SettingsPanelController, Assembly-CSharp
-        m_MethodName: Hide
+      - m_Target: {fileID: 4677212406440701001}
+        m_TargetAssemblyTypeName: ConfirmPanelController, Assembly-CSharp
+        m_MethodName: OnClickCloseButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
